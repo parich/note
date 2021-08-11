@@ -38,8 +38,11 @@ class _NoteScreenState extends State<NoteScreen> {
           IconButton(
             icon: const Icon(Icons.add),
             onPressed: () {
-              NoteModal(buttonPressed: _submit, id: "0", mode: "add")
-                  .showModal(ctx: context, data: Note());
+              NoteModal(buttonPressed: _submit, id: "0", mode: "edit")
+                  .showModal(
+                ctx: context,
+                data: Note(),
+              );
             },
           ),
         ],
